@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="alert alert-info heading"><b>My Todos</b></div>
+<div class="container">
+    <div class="row">
+        <input id="new_todo" type = "text" class="col-12" placeholder="ENTER A NEW TASK" onchange="addTodo()">
+    </div>
+    <br>
+    <div class="row word-wrap">
+        <div class="col-md-4">
+            <div class="active"><b>Active Todos</b></div>
+            <div id="active"></div>
+        </div>
+
+        <div class="col-md-4">
+            <div class=" alert alert-success">
+                <b>Completed Todos</b>
+            </div>
+            <div id="complete"></div>
+        </div>
+
+        <div class="col-md-4">
+            <div class=" alert alert-danger">
+                <b>Deleted Todos</b>
+            </div>
+            <div id="deleted"></div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+<script src="ToDo.js"></script>
+<script src="script.js"></script>
+</html>
